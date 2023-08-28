@@ -1,0 +1,84 @@
+/* змінні */
+:root{
+    --hover-color: #03A9F4;
+    --navigation-color:#7D7D7D;
+    --name-color:#B4AD9E;
+    --text-color:#626262;
+}
+/* прибирання зайвих символів */
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+/* шапка */
+.header{
+
+}
+
+.header-nav{
+
+}
+
+.header-list{
+
+}
+
+.header-link{
+    color: var(--navigation-color);
+    text-transform: uppercase;
+}
+/* додав ховери(посиніння при наводці) */
+.header-link:hover, 
+.header-link:focus
+{
+    color: var(--hover-color);
+}
+
+/* головний контент */
+
+.main{
+
+}
+
+.title,
+.card-title{
+    color: var(--text-color);
+}
+
+.wrap{
+
+}
+
+.card-list{
+
+}
+
+.card-item{
+
+}
+
+.card-img{
+    width: 420px;
+    height: 280px;
+}
+
+.card-name{
+    color: var(--name-color);
+    text-transform: uppercase;
+}
+
+.classparagraf{
+    color: var(--text-color);
+}
+
+
+
+.button{
+    color: var(--text-color);
+    border: solid var(--text-color) 1px;
+    width: 165px;
+    height: 60px;
+}
