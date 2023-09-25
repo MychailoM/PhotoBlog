@@ -1,6 +1,3 @@
-/* font-family: 'Playfair Display', serif;
-   font-family: 'Ubuntu', sans-serif; */
-
 /* змінні */
 :root{
     --hover-color: #03A9F4;
@@ -8,20 +5,6 @@
     --name-color:#B4AD9E;
     --text-color:#626262;
 }
-body{
-    font-family: 'Playfair Display', serif;
-}
-
-h1{
-    display: none;
-}
-
-li{
-    display: inline-block;
-   
-
-}
-
 /* прибирання зайвих символів */
 ul{
     list-style: none;
@@ -46,7 +29,6 @@ a{
 .header-link{
     color: var(--navigation-color);
     text-transform: uppercase;
-    font-size: 14px;
 }
 /* додав ховери(посиніння при наводці) */
 .header-link:hover, 
@@ -64,7 +46,6 @@ a{
 .title,
 .card-title{
     color: var(--text-color);
-    font-size: 30px;
 }
 
 .wrap{
@@ -87,14 +68,10 @@ a{
 .card-name{
     color: var(--name-color);
     text-transform: uppercase;
-    font-family: 'Ubuntu', sans-serif; 
-    font-size: 14px;
-    display: block;
 }
 
 .classparagraf{
     color: var(--text-color);
-    font-size: 14px;
 }
 
 
@@ -104,6 +81,4 @@ a{
     border: solid var(--text-color) 1px;
     width: 165px;
     height: 60px;
-    font-size: 14px;
-    
 }
