@@ -8,14 +8,30 @@
 /* прибирання зайвих символів */
 ul{
     list-style: none;
+    
 }
 
 a{
     text-decoration: none;
 }
+
+body{
+    box-sizing: content-box;
+}
+
+h1{
+    display: none;
+}
+.container{
+    width: 936px;
+    margin: 0 auto;
+    padding: 0 15px;
+    border: red solid 1px;
+}
+
 /* шапка */
 .header{
-
+padding-top: 71px;
 }
 
 .header-nav{
@@ -40,7 +56,8 @@ a{
 /* головний контент */
 
 .main{
-
+    padding-top: 92px;
+    padding-bottom: 66px;
 }
 
 .title,
