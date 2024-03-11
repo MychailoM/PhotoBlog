@@ -1,59 +1,81 @@
 .main {
-    padding-top: 92px;
-    padding-bottom: 66px;
+  padding-top: 92px;
+  padding-bottom: 66px;
 }
-
 
 .main__title {
-    color: $textColor;
-    margin-bottom: 40px;
-    margin-top: 32px;
-    font-size: 30px;
+  color: $textColor;
+  margin-bottom: 40px;
+  margin-top: 32px;
+  font-size: 24px;
 }
 
-.main___list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.main__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main__item {
-    width: 420px;
-    margin-bottom: 130px;
-    display: block;
+  width: 450px;
+  margin-bottom: 130px;
+  display: block;
 }
 
 .main__img {
-    width: 420px;
-    height: 280px;
-    margin-bottom: 32px;
+  width: 100%;
+
+  margin-bottom: 32px;
 }
 
-.main__name{
-    color: $nameColor;
-    text-transform: uppercase;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 300;
-    font-size: 14px;
+.main__name {
+  color: $nameColor;
+  text-transform: uppercase;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
 }
 
-.classparagraf {
-    color: $textColor;
-    font-size: 14px;
+.main__classparagraf {
+  color: $textColor;
+  font-size: 14px;
+  line-height: 120%;
 }
 
 .wrap__btn {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .button {
-    background: #fff;
-    color: $textColor;
-    border: solid $textColor 1px;
+  background: $btnColor;
+  color: $textColor;
+  border: solid $textColor 1px;
+  padding: 20px 40px;
+  font-size: 14px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  .main__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .main__item {
+    width: 350px;
+  }
+
+  .button {
     padding: 20px 48px;
-    font-size: 14px;
-    height: 60px;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 400;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .button {
+    padding: 25px 60px;
+  }
 }

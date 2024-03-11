@@ -2,21 +2,28 @@
     padding-top: 71px;
 }
 
-.header__list{
-    width: 555px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+.header__list{    
+    margin: 0 auto;    
 }
 
 .header__link {
     color: var(--navigation-color);
     text-transform: uppercase;
     font-size: 14px;
+    display: inline-block;
+    margin-bottom: 10px;
 
     &:hover,
     &:focus{
                 color: $hoverColor;
             }
     
+}
+
+@media screen and (min-width: 768px) {
+    .header__list {
+        width: 555px;
+        display: flex;
+        justify-content: space-between;
+    }
 }

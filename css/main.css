@@ -151,31 +151,47 @@ h1 {
 }
 
 .container {
-  width: 936px;
+  width: 480px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 .header {
   padding-top: 71px;
 }
 
 .header__list {
-  width: 555px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
 }
 
 .header__link {
   color: var(--navigation-color);
   text-transform: uppercase;
   font-size: 14px;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 .header__link:hover, .header__link:focus {
   color: #03A9F4;
 }
 
+@media screen and (min-width: 768px) {
+  .header__list {
+    width: 555px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .main {
   padding-top: 92px;
   padding-bottom: 66px;
@@ -185,24 +201,23 @@ h1 {
   color: #626262;
   margin-bottom: 40px;
   margin-top: 32px;
-  font-size: 30px;
+  font-size: 24px;
 }
 
-.main___list {
+.main__list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main__item {
-  width: 420px;
+  width: 450px;
   margin-bottom: 130px;
   display: block;
 }
 
 .main__img {
-  width: 420px;
-  height: 280px;
+  width: 100%;
   margin-bottom: 32px;
 }
 
@@ -214,9 +229,10 @@ h1 {
   font-size: 14px;
 }
 
-.classparagraf {
+.main__classparagraf {
   color: #626262;
   font-size: 14px;
+  line-height: 120%;
 }
 
 .wrap__btn {
@@ -228,9 +244,28 @@ h1 {
   background: #fff;
   color: #626262;
   border: solid #626262 1px;
-  padding: 20px 48px;
+  padding: 20px 40px;
   font-size: 14px;
-  height: 60px;
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  .main__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .main__item {
+    width: 350px;
+  }
+  .button {
+    padding: 20px 48px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button {
+    padding: 25px 60px;
+  }
 }/*# sourceMappingURL=main.css.map */
